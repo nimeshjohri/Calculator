@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<script src="angular.js"></script>
+<script src="samp.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div id="calc" ng-controller="control">
+	<p class="output" name="output" >
+          {{output}}<br>
+          {{operationToken}}
+        </p>
+	<button class="btt" ng-click='updateOutput(9)'>9</button>
+	<button class="btt" ng-click='updateOutput(8)'>8</button>
+	<button class="btt" ng-click='updateOutput(7)'>7</button><br>
+	<button class="btt" ng-click='updateOutput(6)'>6</button>
+	<button class="btt" ng-click='updateOutput(5)'>5</button>
+	<button class="btt" ng-click='updateOutput(4)'>4</button><br>
+	<button class="btt" ng-click='updateOutput(3)'>3</button>
+	<button class="btt" ng-click='updateOutput(2)'>2</button>
+	<button class="btt" ng-click='updateOutput(1)'>1</button><br>
+	<button class="btt_zero" ng-click='updateOutput(0)'>0</button>
+	<button class="operations" ng-click="add(num1,num2)">+</button>
+	<button class="operations1" ng-click="subtract(num1,num2)">-</button>
+	<button class="operations2" ng-click="multiply(num1,num2)">*</button>
+	<button class="operations3" ng-click="divide(num1,num2)">/</button>
+	</div>
+</body>
+</html>

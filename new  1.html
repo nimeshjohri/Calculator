@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<script src="angular.js"></script>
+<script src="samp.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div id="calc" ng-controller="control">
+	<input placeholder="Enter 1st Number" type="number" class="inp1" ng-model="num1"><br><br>
+	<input placeholder="Enter 2nd Number" type="number" class="inp2" ng-model="num2">{{result}}<br>
+	<button class="btt">9</button>
+	<button class="btt">8</button>
+	<button class="btt">7</button><br>
+	<button class="btt">6</button>
+	<button class="btt">5</button>
+	<button class="btt">4</button><br>
+	<button class="btt">3</button>
+	<button class="btt">2</button>
+	<button class="btt">1</button><br>
+	<button class="btt_zero">0</button>
+	<button class="operations" ng-click="add(num1,num2)">+</button>
+	<button class="operations1" ng-click="subtract(num1,num2)">-</button>
+	<button class="operations2" ng-click="multiply(num1,num2)">*</button>
+	<button class="operations3" ng-click="divide(num1,num2)">/</button>
+	</div>
+</body>
+</html>
